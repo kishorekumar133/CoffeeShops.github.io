@@ -1,0 +1,11 @@
+.image{
+    height: 100vh;
+    display: flex;
+    color:rgb(47, 10, 10);
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
