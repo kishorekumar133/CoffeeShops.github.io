@@ -1,0 +1,94 @@
+.image{
+height: auto;
+display: flex;
+color:rgb(47, 10, 10);
+align-items: left;
+flex-direction: column;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.book{
+   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.your{
+   font-size: large;
+    font-family: 'Akaya Telivigala',cursive;
+}
+.for{
+   height: 700px;
+    width: 700px;
+  
+}
+.for-text{
+    text-align: center;
+    margin: 40px 0;
+}
+.for-text h1{
+    margin: 0 10px;
+    font-family: 'Akaya Telivigala',cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.main-form div{
+    margin: 10px 20px;
+    width: 300px;
+    display: inline-block;
+
+}
+.main-form div input{
+   width: 100%;
+   font-family: 'Akaya Telivigala',cursive;
+    border:1px solid;
+    font-size: 20px;
+    outline: none;
+   padding: 3px 0 3px 10px;
+   margin-top: 3px;
+   border-radius: 10px;
+}
+.main-form div span{
+    width: 100%;
+    font-family: 'Akaya Telivigala',cursive;
+    color: #000;
+    font-size: 25px;
+}
+
+
+
+
+#submit{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#submit input{
+    width: 200px;
+    font-family: 'Akaya Telivigala',cursive ;
+    background-color: rgb(62, 35, 35) !important;
+    color: #ffff;
+    transition: all .3s;
+}
+
+#submit input:hover{
+    width: 200px;
+    font-family: 'Akaya Telivigala',cursive ;
+    background-color: rgb(62, 35, 35) !important;
+    color: #ffff !important;
+}
+
+#submit input:active{
+   font-size: 19px;
+    background-color: rgb(62, 35, 35) !important;
+    color: #ffff;
+}
+@media screen and (max-width:710px){
+    .main-form{
+        text-align: center;
+    }
+}

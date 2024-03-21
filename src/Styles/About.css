@@ -1,0 +1,357 @@
+.image{
+    height: auto;
+display: flex;
+color:rgb(47, 10, 10);
+align-items: left;
+flex-direction: column;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+ #about{
+    width:100%;
+    height: 100vh;
+}
+#about .container{
+    padding-top: 70px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.heading span{
+    color: #b2744c;
+}
+#about .card {
+    border-radius: 10px;
+}
+#about .card img{
+    border-radius: 10px;
+}
+#about-btn{
+    width: 200px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid #b2744c;
+    color: #b2744c;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#about-btn:hover{
+    background-color: #b2744c;
+    
+}
+.head{
+  text-align: center;
+  background-color: rgb(68, 30, 30);
+  color: rgb(233, 233, 233);
+  height: 70px;
+}
+.head h1{
+    padding-top: 5px;
+    font-family: 'Akaya Telivigala',cursive;
+}
+.our{
+    text-align: center;
+    font-family: monospace;
+    color: black;
+    padding-top: 20px;
+}
+.iii{
+    height: 70%;
+    width: 70%;
+    margin: 90px;
+}
+.ccc{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+}
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-section .cards{
+    flex: 1;
+    margin: 20px 20px;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+.content-section .cards img{
+    width: 100%;
+    height: auto;
+}
+.content-section .cards h2{
+               margin: 15px 0px;
+               font-size: 28px;
+               color: #1662a1;
+               font-family: sans-serif;
+}
+
+.content-section .cards p{
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+.contain{
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+}
+.card__contain{
+    display: grid;
+    row-gap: 3.5rem;
+}
+.card__article{
+    position: relative;
+    overflow: hidden;
+}
+.card__img{
+    width: 328px;
+    border-radius: 1.5rem;
+    margin: 20px;
+}
+.card__data{
+    width: 280px;
+    background-color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+.card__description{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: .25rem;
+}
+.card_title{
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: .75rem;
+}
+.card__button{
+  text-decoration: none;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: var(--first-color);
+}
+.card__button:hover{
+    text-decoration: underline;
+}
+.card__article:hover .card__data{
+     animation: show-data 1s forwards;
+     opacity: 1;
+     transition: opacity .3s;   
+}
+.card__article:hover{
+    animation: remove-overflow 2s forwards;
+}
+.card__article:not(:hover){
+    animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data{
+    animation: remove-data 1s forwards;
+}
+.hii{
+    align-items: center;
+    text-align: center;
+    font-family: "Twentieth Century";
+}
+@keyframes show-data{
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+@keyframes  remove-overflow{
+    to{
+        overflow: initial;
+    }
+}
+@keyframes  remove-data{
+    0%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-10rem);
+    }
+   100%{
+        transform: translateY(-5rem);
+    }
+
+}
+@keyframes show-overflow {
+     0%{
+        overflow: initial;
+        pointer-events: none;
+     }
+     .50%{
+        overflow: hidden;
+     }
+}
+@media screen and (max-width:340px){
+    .contain{
+        margin-inline: 1rem;
+    }
+
+    .card__data{
+        width: 250px;
+        padding: 1rem;
+    }
+}
+@media screen and(min-width:768px){
+    .card__contain{
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1.5rem;
+    }
+}
+@media screen and (min-width:1120px){
+    .contain{
+        height: 100vh;
+    }
+    .card__contain{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card__img{
+        width:300px;
+    }
+    .card__data{
+        width: 250px;
+       padding-inline: 2.5rem;
+    }
+}
+@media screen and(max-width:991px){
+    .content-section{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:991px){
+    #about p{
+        font-size: 8px;
+        width:49%;
+    }
+}
+@media screen and (max-width:576px){
+    #about p{
+        font-size: 15px;
+        width:100%;
+    }
+} 
+
+
+
+
+/* Review.Css */
+
+.reviews{
+    padding: 100px 12.5% 100px;
+  
+
+}
+.reviews h3{
+    color: #100e0e;
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 0px 1px 0px 1px black;
+    margin-bottom: 20px;
+}
+.reviews h3 span{
+    color: #b2744c;
+
+}
+.review-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    gap: 0.90rem;
+}
+.review-card .rowes{
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #b2744c;
+    border-radius: 5px;
+    transition: 0.5 ease;
+    cursor: pointer;
+}
+.review-card .rowes:hover{
+    background-color: #b2744c;
+}
+.reviews .rating{
+       padding: 10px;
+}
+.bi{
+   color: orange;
+   font-size: 15px;
+}
+.reviews p{
+    color: #000000;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.reviews h6{
+    padding: 10px;
+    color: #000000;
+}
+.reviews h6 img{
+    width: 20%;
+
+}
+.reviews h6{
+    font-size: 25px;
+    font-family: monospace;
+
+}
+
+@media (max-width:1095px){
+     .review-card{
+        grid-template-columns: 1fr;
+     }
+}
+@media (max-width:1200px){
+    .reviews{
+        padding: 100px 10% 100px;
+    }
+
+}
+@media (max-width:1030px){
+    .reviews{
+        padding: 100px 6% 100px;
+    }
+    
+}
+
+@media (max-width:951px){
+    .reviews{
+        padding: 100px 12% 100px;
+        height: auto;
+    }
+    
+}
+
+
+

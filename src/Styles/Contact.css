@@ -1,0 +1,63 @@
+.ima{
+height:100vh;
+display: flex;
+color:rgb(255, 255, 255);
+align-items: left;
+flex-direction: column;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.get{
+    color: white;
+}
+.conata{
+    width: 60%;
+    padding: 45px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 50px;
+}
+
+.col-md-7{
+    padding: 20px;
+}
+.col-md-5{
+       padding: 20px;
+}
+.form-control{
+    height: 52px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    border-radius: 2px;
+    box-sizing: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+.bi{
+    font-size:  20px;
+    letter-spacing: 15px;
+    transition: all 0.4s ease;
+}
+.bi:hover{
+     transform: translateY(-3px);
+}
+.d-flex p{
+   font-size: 18px;
+   padding-left: 18px;
+  
+}
+
+
+@media only screen and (max-width:600px){
+    .conata{
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 90%;
+    }
+}
